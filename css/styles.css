@@ -42,7 +42,9 @@ body {
   margin: 0;
   font-family: var(--font);
   color: var(--text);
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: radial-gradient(rgba(99, 102, 241, 0.06) 1px, transparent 1.4px);
+  background-size: 24px 24px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -255,8 +257,8 @@ img { max-width: 100%; display: block; }
 .section { padding: clamp(3.5rem, 9vw, 6rem) 0; }
 .section.alt {
   background:
-    radial-gradient(40rem 20rem at 100% 0%, rgba(139, 92, 246, 0.06), transparent 60%),
-    var(--bg-alt);
+    radial-gradient(40rem 20rem at 100% 0%, rgba(139, 92, 246, 0.07), transparent 60%),
+    rgba(246, 247, 251, 0.78);
   border-block: 1px solid var(--border);
 }
 .section-title {
@@ -272,12 +274,35 @@ img { max-width: 100%; display: block; }
   margin-top: 0.6rem;
 }
 
+/* ---------- About ---------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+.about-text p:last-of-type { margin-bottom: 1.5rem; }
+.focus { margin-top: 0.5rem; }
+.focus-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+
 /* ---------- Stats ---------- */
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-top: 2.5rem;
+}
+.about-grid .stats {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 0;
 }
 .stat {
   position: relative;
@@ -334,12 +359,21 @@ img { max-width: 100%; display: block; }
   border-radius: 50%;
   box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.35);
 }
-.timeline-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 0.9rem; margin-bottom: 0.5rem; }
-.timeline-head h3 { margin: 0; font-size: 1.2rem; }
+.timeline-item {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 0.5rem 2.5rem;
+}
+.timeline-meta { display: flex; flex-direction: column; gap: 0.15rem; }
+.timeline-meta h3 { margin: 0; font-size: 1.2rem; }
 .company { font-weight: 600; color: var(--accent); }
-.period { color: var(--muted); font-size: 0.88rem; margin-left: auto; }
-.timeline-item ul { margin: 0.25rem 0 0; padding-left: 1.1rem; }
-.timeline-item li { margin-bottom: 0.45rem; color: #2c3340; }
+.period {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 0.15rem;
+}
+.timeline-item ul { margin: 0.1rem 0 0; padding-left: 1.1rem; }
+.timeline-item li { margin-bottom: 0.5rem; color: #2c3340; }
 .timeline-item li strong { color: var(--text); }
 
 /* ---------- Education ---------- */
@@ -542,6 +576,8 @@ img { max-width: 100%; display: block; }
   .hero-photo { order: -1; }
   .hero .lead { margin-inline: auto; }
   .hero-actions { justify-content: center; }
+  .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .timeline-item { grid-template-columns: 1fr; gap: 0.4rem; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .cards { grid-template-columns: 1fr; }
   .skill-groups { grid-template-columns: 1fr; }
