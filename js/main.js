@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
   initRevealOnScroll();
   initActiveNavLink();
+  initProgressBar();
   initContactForm();
 });
 
@@ -46,7 +47,7 @@ function initMobileNav() {
 
   // Close if resized up to desktop
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 860) close();
+    if (window.innerWidth > 760) close();
   });
 }
 
@@ -73,7 +74,9 @@ function initRevealOnScroll() {
 
 /* ---------- Active nav link on scroll ---------- */
 function initActiveNavLink() {
-  const links = Array.from(document.querySelectorAll(".primary-nav a"));
+  const links = Array.from(
+    document.querySelectorAll('.primary-nav a[href^="#"]')
+  );
   const sections = links
     .map((l) => document.querySelector(l.getAttribute("href")))
     .filter(Boolean);
@@ -93,6 +96,23 @@ function initActiveNavLink() {
     { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
   );
   sections.forEach((s) => io.observe(s));
+}
+
+/* ---------- Reading progress bar ---------- */
+function initProgressBar() {
+  const bar = document.getElementById("progress-bar");
+  if (!bar) return;
+
+  const update = () => {
+    const doc = document.documentElement;
+    const max = doc.scrollHeight - doc.clientHeight;
+    const pct = max > 0 ? (doc.scrollTop / max) * 100 : 0;
+    bar.style.width = pct + "%";
+  };
+
+  document.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+  update();
 }
 
 /* ---------- Contact form ---------- */

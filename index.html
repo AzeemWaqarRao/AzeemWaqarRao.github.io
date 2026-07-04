@@ -35,25 +35,28 @@
     "knowsAbout": ["Agentic AI", "Large Language Models", "RAG", "Multi-Agent Systems", "Computer Vision", "Machine Learning"]
   }
   </script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22><stop offset=%220%22 stop-color=%22%236366f1%22/><stop offset=%221%22 stop-color=%22%23db2777%22/></linearGradient></defs><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22url(%23g)%22/><text x=%2250%22 y=%2272%22 font-size=%2262%22 font-family=%22Arial,sans-serif%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22>A</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%232d4bf0%22/><text x=%2250%22 y=%2271%22 font-size=%2258%22 font-family=%22Arial,sans-serif%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22>A</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <!-- ===== Header / Nav ===== -->
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a href="#top" class="brand">Azeem&nbsp;Waqar</a>
+      <a href="#top" class="brand">Azeem Waqar<span class="brand-dot">.</span></a>
 
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        <span class="bar"></span><span class="bar"></span>
       </button>
 
       <nav class="primary-nav" id="primary-nav">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+        <a class="nav-cta" href="assets/AzeemWaqarResume.pdf" download>Resume</a>
       </nav>
     </div>
   </header>
@@ -63,218 +66,182 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <p class="status-badge reveal"><span class="pulse"></span>Open to AI / ML engineering roles</p>
-          <p class="eyebrow reveal">AI Engineer · Agentic Systems · RAG</p>
-          <h1 class="reveal">I build AI agents that ship to production.</h1>
+          <p class="hello mono reveal">// hi, I'm Azeem — AI engineer in Lahore, PK</p>
+          <h1 class="reveal">I build AI agents<br />that actually <span class="accent">ship</span>.</h1>
           <p class="lead reveal">
-            Hi, I'm Azeem — three years building production-grade AI in fintech and
-            healthcare. I specialize in <strong>agentic AI</strong>, LLM-powered
-            conversational agents, <strong>multi-agent orchestration</strong>, and
-            <strong>RAG pipelines</strong>, with a background in computer vision and
-            medical imaging.
+            Three years turning LLMs into production systems for fintech and
+            healthcare — conversational agents that file disputes and replace
+            cards, multi-agent orchestration, RAG pipelines, and computer
+            vision for medical imaging.
           </p>
-          <p class="current reveal">Currently: building agentic customer-support AI at <strong>i2c inc.</strong></p>
           <div class="hero-actions reveal">
-            <a class="btn btn-primary" href="assets/AzeemWaqarResume.pdf" download>Download Resume</a>
-            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-secondary" href="assets/AzeemWaqarResume.pdf" download>Resume ↓</a>
           </div>
-          <div class="hero-links reveal">
-            <a href="https://www.linkedin.com/in/azeem-waqar" target="_blank" rel="noopener">LinkedIn</a>
-            <span class="dot">·</span>
-            <a href="https://github.com/AzeemWaqarRao" target="_blank" rel="noopener">GitHub</a>
-            <span class="dot">·</span>
-            <a href="mailto:azeemwaqar2k15@gmail.com">Email</a>
-            <span class="dot">·</span>
-            <span class="muted">Lahore, Pakistan</span>
-          </div>
+          <p class="hero-status reveal"><span class="pulse"></span>Open to AI/ML roles · currently Data Scientist at <strong>i2c inc.</strong></p>
         </div>
-        <div class="hero-photo reveal">
-          <div class="photo-ring">
-            <img src="assets/azeem.jpeg" alt="Azeem Waqar" width="320" height="320" />
-          </div>
+
+        <figure class="hero-photo reveal">
+          <img src="assets/azeem.jpeg" alt="Azeem Waqar" width="320" height="320" />
+        </figure>
+      </div>
+
+      <div class="container">
+        <div class="proof reveal" role="list">
+          <div class="proof-item" role="listitem"><span class="proof-num">70%</span><span class="proof-label">less call-center traffic</span></div>
+          <div class="proof-item" role="listitem"><span class="proof-num">50+</span><span class="proof-label">tasks automated end-to-end</span></div>
+          <div class="proof-item" role="listitem"><span class="proof-num">1000+</span><span class="proof-label">concurrent conversations</span></div>
+          <div class="proof-item" role="listitem"><span class="proof-num">96%</span><span class="proof-label">pose-estimation accuracy</span></div>
         </div>
       </div>
     </section>
 
-    <!-- ===== About ===== -->
-    <section id="about" class="section">
+    <!-- ===== Work / Experience ===== -->
+    <section id="work" class="section">
       <div class="container">
-        <h2 class="section-title reveal">About</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p class="reveal">
-              I'm an AI Engineer with 3 years of experience building and shipping
-              production-grade AI systems in fintech and healthcare. My focus is agentic
-              AI — LLM-powered conversational agents, multi-agent orchestration, and RAG
-              pipelines that resolve real tasks end to end, not just chat.
-            </p>
-            <p class="reveal">
-              Earlier in my career I worked deeply in computer vision and medical imaging
-              — object detection, pose estimation, and semantic segmentation on 2D and 3D
-              clinical data. That mix of NLP and vision shapes how I approach problems:
-              ground models in real data, measure them honestly, and ship.
-            </p>
-            <div class="focus reveal">
-              <span class="focus-label">Focus areas</span>
-              <div class="chips">
-                <span>Agentic AI</span><span>LLMs &amp; RAG</span><span>Multi-Agent Systems</span><span>Computer Vision</span><span>MLOps</span>
+        <p class="sec-label mono reveal">01 — experience</p>
+        <h2 class="reveal">Where I've worked</h2>
+
+        <div class="jobs">
+          <article class="job reveal">
+            <div class="job-head">
+              <div>
+                <h3>Data Scientist</h3>
+                <p class="job-org">i2c inc. · fintech</p>
               </div>
-            </div>
-          </div>
-
-          <div class="stats reveal">
-            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">years building AI</span></div>
-            <div class="stat"><span class="stat-num">70%</span><span class="stat-label">call-center traffic reduced</span></div>
-            <div class="stat"><span class="stat-num">1000+</span><span class="stat-label">simultaneous conversations</span></div>
-            <div class="stat"><span class="stat-num">50+</span><span class="stat-label">task types automated</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Experience ===== -->
-    <section id="experience" class="section alt">
-      <div class="container">
-        <h2 class="section-title reveal">Experience</h2>
-
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-meta">
-              <h3>Data Scientist</h3>
-              <span class="company">i2c inc.</span>
-              <span class="period">Jun 2024 – Present</span>
+              <span class="job-period mono">Jun 2024 — present</span>
             </div>
             <ul>
-              <li>Built an action-driven conversational AI agent for fintech customer support — performing cardholder operations (dispute filing, card replacement) on request — achieving a <strong>70% reduction</strong> in call-center traffic.</li>
-              <li>Empowered the agent with tools, a domain-specific knowledge base, and the ability to perform <strong>50+ complex tasks</strong> without human intervention.</li>
-              <li>Collaborated on an NLP engine that evaluates audio calls across <strong>15+ KPIs</strong> using deep learning models, reaching ~85% average accuracy.</li>
-              <li>Drove R&amp;D improvements to the chatbot using multi-stage &amp; hybrid retrieval with reranking.</li>
+              <li>Built an action-driven conversational AI agent for customer support — filing disputes, replacing cards, handling cardholder operations — cutting call-center traffic by <strong>70%</strong>.</li>
+              <li>Gave the agent tools and a domain knowledge base to complete <strong>50+ complex tasks</strong> with no human in the loop.</li>
+              <li>Collaborated on an NLP engine scoring audio calls on <strong>15+ KPIs</strong> at ~85% average accuracy.</li>
+              <li>Improved retrieval with multi-stage & hybrid search plus reranking.</li>
             </ul>
           </article>
 
-          <article class="timeline-item reveal">
-            <div class="timeline-meta">
-              <h3>Associate Data Scientist</h3>
-              <span class="company">Next Bridge</span>
-              <span class="period">Jul 2023 – May 2024</span>
+          <article class="job reveal">
+            <div class="job-head">
+              <div>
+                <h3>Associate Data Scientist</h3>
+                <p class="job-org">Next Bridge · software services</p>
+              </div>
+              <span class="job-period mono">Jul 2023 — May 2024</span>
             </div>
             <ul>
-              <li>Created a RAG chatbot for the company website that helps clients find a suitable developer.</li>
-              <li>Worked with a US-based medical company to detect spinal diseases from 2D and 3D data, achieving <strong>95%+ accuracy</strong>.</li>
-              <li>Performed semantic segmentation on 3D data (MRI &amp; CT scans) using a UNet implementation in PyTorch.</li>
-              <li>Architected a 4-tier pipeline — from data gathering and annotation to data prep, post-processing, and model deployment.</li>
+              <li>Built a RAG chatbot for the company site that matches clients with the right developer.</li>
+              <li>Detected spinal diseases from 2D/3D scans for a US medical company at <strong>95%+ accuracy</strong>.</li>
+              <li>Semantic segmentation on MRI & CT volumes with a PyTorch UNet.</li>
+              <li>Architected a 4-tier pipeline — data gathering, annotation, post-processing, deployment.</li>
             </ul>
           </article>
-        </div>
 
-        <div class="education reveal">
-          <h3 class="edu-title">Education</h3>
-          <div class="edu-row">
-            <div>
-              <strong>BS, Computer Science</strong> — COMSATS University, Sahiwal
+          <article class="job job-edu reveal">
+            <div class="job-head">
+              <div>
+                <h3>BS Computer Science</h3>
+                <p class="job-org">COMSATS University, Sahiwal</p>
+              </div>
+              <span class="job-period mono">2019 — 2023</span>
             </div>
-            <span class="period">Sep 2019 – Jun 2023</span>
-          </div>
-          <p class="muted small">3.67 CGPA · 3rd overall in batch · Data Science mentor in the Computer Science Society.</p>
+            <p class="job-note">3.67 CGPA, 3rd in batch · Data Science mentor, Computer Science Society</p>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- ===== Projects ===== -->
-    <section id="projects" class="section">
+    <section id="projects" class="section section-tint">
       <div class="container">
-        <h2 class="section-title reveal">Projects</h2>
+        <p class="sec-label mono reveal">02 — projects</p>
+        <h2 class="reveal">Things I've built</h2>
+
         <div class="cards">
-          <article class="card reveal">
-            <p class="card-metric">70% ↓ call-center traffic · 1000+ concurrent sessions</p>
+          <article class="card card-wide reveal">
+            <p class="card-metric mono">70% ↓ support traffic · 1000+ concurrent sessions</p>
             <h3>Agentic AI for Customer Service</h3>
-            <p>Action-driven support agent for fintech across voice and chat. Integrated IBM Watsonx Assistant with AI agents for context-aware, end-to-end resolution of 50+ call types, with a multi-agent orchestration layer (MCP-style) and a secure, client-configurable architecture supporting 1000+ simultaneous conversations.</p>
-            <div class="tags">
-              <span>LLMs</span><span>Multi-Agent</span><span>IBM Watsonx</span><span>RAG</span><span>Voice + Chat</span>
-            </div>
+            <p>Action-driven support agent for fintech, on voice and chat. IBM Watsonx Assistant plus AI agents resolving 50+ call types end to end, behind a multi-agent orchestration layer (MCP-style) with secure, client-configurable enterprise controls.</p>
+            <div class="tags"><span>LLMs</span><span>Multi-Agent</span><span>IBM Watsonx</span><span>RAG</span><span>Voice + Chat</span></div>
           </article>
 
           <article class="card reveal">
-            <p class="card-metric">&lt; 50 ms inference</p>
+            <p class="card-metric mono">&lt; 50 ms inference</p>
             <h3>Language Translation Service</h3>
-            <p>A FastAPI-based translation microservice extending the support agent's multilingual capabilities, optimized for speed and scale with inference under <strong>50&nbsp;ms</strong>.</p>
-            <div class="tags">
-              <span>FastAPI</span><span>Microservice</span><span>NLP</span><span>Low-latency</span>
-            </div>
+            <p>FastAPI microservice that made the support agent multilingual — built for speed and scale, inference under 50 milliseconds.</p>
+            <div class="tags"><span>FastAPI</span><span>NLP</span><span>Low-latency</span></div>
           </article>
 
           <article class="card reveal">
-            <p class="card-metric">96% pose-estimation accuracy</p>
-            <h3>Lumbar Lordosis &amp; Scoliosis Detector</h3>
-            <p>Computer vision app for spinal pose estimation on X-rays. Trained YOLOv8, built a GUI, and deployed on AWS EC2 via Docker + ECR. Extended the prediction pipeline with more classes, improving accuracy by 4% to reach <strong>96%</strong>.</p>
-            <div class="tags">
-              <span>YOLOv8</span><span>Pose Estimation</span><span>Docker</span><span>AWS EC2/ECR</span>
-            </div>
+            <p class="card-metric mono">96% accuracy</p>
+            <h3>Spine Disorder Detector</h3>
+            <p>YOLOv8 pose estimation on spinal X-rays for lumbar lordosis and scoliosis. Built the GUI, shipped on AWS EC2 with Docker + ECR, and lifted accuracy 4 points to 96%.</p>
+            <div class="tags"><span>YOLOv8</span><span>Pose Estimation</span><span>Docker</span><span>AWS</span></div>
           </article>
 
           <article class="card reveal">
-            <p class="card-metric">+50% retrieval relevance</p>
+            <p class="card-metric mono">+50% retrieval relevance</p>
             <h3>RAG-Based Chatbot</h3>
-            <p>Scraped real-time web data into a custom knowledge base. Ran quantized Llama 2 on CPU for inference under 7&nbsp;s with low memory, using Redis as a vector DB and cross-encoder reranking to improve retrieval relevance by <strong>50%</strong>.</p>
-            <div class="tags">
-              <span>Llama 2</span><span>Redis</span><span>Reranking</span><span>RAG</span>
-            </div>
+            <p>Scraped live web data into a custom knowledge base. Quantized Llama 2 on CPU for fast, low-memory inference, with Redis as the vector store and cross-encoder reranking.</p>
+            <div class="tags"><span>Llama 2</span><span>Redis</span><span>Reranking</span></div>
+          </article>
+
+          <article class="card card-ghost reveal">
+            <h3>More on GitHub</h3>
+            <p>Experiments, notebooks, and everything in between.</p>
+            <a class="arrow-link" href="https://github.com/AzeemWaqarRao" target="_blank" rel="noopener">github.com/AzeemWaqarRao →</a>
           </article>
         </div>
-        <p class="projects-more reveal">
-          <a href="https://github.com/AzeemWaqarRao" target="_blank" rel="noopener">More on GitHub →</a>
-        </p>
       </div>
     </section>
 
     <!-- ===== Skills ===== -->
-    <section id="skills" class="section alt">
+    <section id="skills" class="section">
       <div class="container">
-        <h2 class="section-title reveal">Skills &amp; Tools</h2>
-        <div class="skill-groups">
-          <div class="skill-group reveal">
-            <h3>AI / ML Technologies</h3>
-            <div class="chips">
-              <span>LLMs (GPT-4, Claude, Llama)</span><span>Generative AI</span><span>Transformers</span><span>RAG</span><span>Multi-Agent Systems</span><span>Computer Vision</span><span>Transfer Learning</span><span>Prompt Engineering</span><span>Fine-tuning</span>
-            </div>
+        <p class="sec-label mono reveal">03 — toolbox</p>
+        <h2 class="reveal">What I work with</h2>
+
+        <div class="skills">
+          <div class="skill-row reveal">
+            <h3 class="mono">ai / ml</h3>
+            <p>LLMs (GPT-4, Claude, Llama) · Generative AI · Transformers · RAG · Multi-Agent Systems · Computer Vision · Transfer Learning · Prompt Engineering · Fine-tuning</p>
           </div>
-          <div class="skill-group reveal">
-            <h3>Frameworks &amp; Libraries</h3>
-            <div class="chips">
-              <span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>LangChain</span><span>Hugging Face</span><span>Scikit-Learn</span><span>OpenCV</span><span>YOLO</span><span>FastAPI</span><span>Flask</span>
-            </div>
+          <div class="skill-row reveal">
+            <h3 class="mono">frameworks</h3>
+            <p>PyTorch · TensorFlow · Keras · LangChain · Hugging Face · Scikit-Learn · OpenCV · YOLO · FastAPI · Flask</p>
           </div>
-          <div class="skill-group reveal">
-            <h3>Data &amp; Infrastructure</h3>
-            <div class="chips">
-              <span>Redis</span><span>Pinecone</span><span>SQL</span><span>Kafka</span><span>Docker</span><span>AWS (EC2, ECR, S3)</span><span>IBM Watsonx</span><span>MLOps</span><span>Git / GitHub</span>
-            </div>
+          <div class="skill-row reveal">
+            <h3 class="mono">data & infra</h3>
+            <p>Redis · Pinecone · SQL · Kafka · Docker · AWS (EC2, ECR, S3) · IBM Watsonx · MLOps · Git / GitHub</p>
           </div>
-          <div class="skill-group reveal">
-            <h3>Languages &amp; Tools</h3>
-            <div class="chips">
-              <span>Python</span><span>NumPy</span><span>Pandas</span><span>REST APIs</span><span>Model Deployment</span><span>CI/CD Pipelines</span>
-            </div>
+          <div class="skill-row reveal">
+            <h3 class="mono">languages</h3>
+            <p>Python · NumPy · Pandas · REST APIs · Model Deployment · CI/CD Pipelines</p>
+          </div>
+          <div class="skill-row reveal">
+            <h3 class="mono">certs</h3>
+            <p>Machine Learning Specialization (Andrew Ng, Stanford) · Deep Learning: Image Recognition · Transfer Learning for Images Using PyTorch · AWS Cloud Essentials</p>
           </div>
         </div>
-
-        <h3 class="certs-title reveal">Certifications</h3>
-        <ul class="certs reveal">
-          <li>Machine Learning Specialization — Andrew Ng, Stanford University</li>
-          <li>Deep Learning: Image Recognition — LinkedIn Learning</li>
-          <li>Transfer Learning for Images Using PyTorch — LinkedIn Learning</li>
-          <li>AWS Knowledge: Cloud Essentials — Amazon Web Services</li>
-        </ul>
       </div>
     </section>
 
     <!-- ===== Contact ===== -->
-    <section id="contact" class="section">
-      <div class="container narrow">
-        <h2 class="section-title reveal">Let's build something</h2>
-        <p class="reveal">Hiring for an AI/ML role, or want to collaborate on agents, RAG, or computer vision? Send a message — I usually reply within a day.</p>
+    <section id="contact" class="section section-tint">
+      <div class="container">
+        <p class="sec-label mono reveal">04 — contact</p>
+        <h2 class="reveal">Let's talk</h2>
 
         <div class="contact-grid">
+          <div class="contact-intro reveal">
+            <p>Hiring for an AI/ML role, or want to collaborate on agents, RAG, or computer vision? Send a message — I usually reply within a day.</p>
+            <ul class="contact-list">
+              <li><span class="mono">email</span><a href="mailto:azeemwaqar2k15@gmail.com">azeemwaqar2k15@gmail.com</a></li>
+              <li><span class="mono">phone</span><a href="tel:+923484205020">+92 348 4205020</a></li>
+              <li><span class="mono">linkedin</span><a href="https://www.linkedin.com/in/azeem-waqar" target="_blank" rel="noopener">azeem-waqar</a></li>
+              <li><span class="mono">github</span><a href="https://github.com/AzeemWaqarRao" target="_blank" rel="noopener">AzeemWaqarRao</a></li>
+              <li><span class="mono">location</span><span>Lahore, Pakistan</span></li>
+            </ul>
+          </div>
+
           <form class="contact-form reveal" id="contact-form" novalidate>
             <div class="field">
               <label for="name">Name</label>
@@ -291,17 +258,6 @@
             <button type="submit" class="btn btn-primary">Send message</button>
             <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </form>
-
-          <aside class="contact-side reveal">
-            <h3>Direct</h3>
-            <ul class="contact-list">
-              <li><span class="ic">✉</span> <a href="mailto:azeemwaqar2k15@gmail.com">azeemwaqar2k15@gmail.com</a></li>
-              <li><span class="ic">☎</span> <a href="tel:+923484205020">+92 348 4205020</a></li>
-              <li><span class="ic">in</span> <a href="https://www.linkedin.com/in/azeem-waqar" target="_blank" rel="noopener">linkedin.com/in/azeem-waqar</a></li>
-              <li><span class="ic">⌥</span> <a href="https://github.com/AzeemWaqarRao" target="_blank" rel="noopener">github.com/AzeemWaqarRao</a></li>
-              <li><span class="ic">⚲</span> <span class="muted">Lahore, Pakistan</span></li>
-            </ul>
-          </aside>
         </div>
       </div>
     </section>
@@ -310,7 +266,7 @@
   <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <span>© <span id="year"></span> Azeem Waqar</span>
+      <span class="mono">© <span id="year"></span> Azeem Waqar</span>
       <span class="footer-links">
         <a href="https://www.linkedin.com/in/azeem-waqar" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/AzeemWaqarRao" target="_blank" rel="noopener">GitHub</a>
