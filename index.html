@@ -11,8 +11,30 @@
   <meta property="og:title" content="Azeem Waqar — AI / ML Engineer" />
   <meta property="og:description" content="3 years building production-grade AI systems in fintech and healthcare. Agentic AI, LLMs, RAG, and computer vision." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://azeemwaqar.com/" />
+  <meta property="og:image" content="https://azeemwaqar.com/assets/azeem.jpeg" />
+  <link rel="canonical" href="https://azeemwaqar.com/" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Azeem Waqar",
+    "jobTitle": "AI / ML Engineer",
+    "email": "mailto:azeemwaqar2k15@gmail.com",
+    "url": "https://azeemwaqar.com/",
+    "image": "https://azeemwaqar.com/assets/azeem.jpeg",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" },
+    "alumniOf": "COMSATS University",
+    "worksFor": { "@type": "Organization", "name": "i2c inc." },
+    "sameAs": [
+      "https://www.linkedin.com/in/azeem-waqar",
+      "https://github.com/AzeemWaqarRao"
+    ],
+    "knowsAbout": ["Agentic AI", "Large Language Models", "RAG", "Multi-Agent Systems", "Computer Vision", "Machine Learning"]
+  }
+  </script>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22><stop offset=%220%22 stop-color=%22%236366f1%22/><stop offset=%221%22 stop-color=%22%23db2777%22/></linearGradient></defs><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22url(%23g)%22/><text x=%2250%22 y=%2272%22 font-size=%2262%22 font-family=%22Arial,sans-serif%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22>A</text></svg>" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -41,15 +63,17 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <p class="eyebrow reveal">AI Engineer / ML Engineer</p>
-          <h1 class="reveal">Hi, I'm Azeem Waqar.</h1>
+          <p class="status-badge reveal"><span class="pulse"></span>Open to AI / ML engineering roles</p>
+          <p class="eyebrow reveal">AI Engineer · Agentic Systems · RAG</p>
+          <h1 class="reveal">I build AI agents that ship to production.</h1>
           <p class="lead reveal">
-            I build and ship production-grade AI systems. Three years across fintech and
-            healthcare — specializing in <strong>agentic AI</strong>, LLM-powered
+            Hi, I'm Azeem — three years building production-grade AI in fintech and
+            healthcare. I specialize in <strong>agentic AI</strong>, LLM-powered
             conversational agents, <strong>multi-agent orchestration</strong>, and
             <strong>RAG pipelines</strong>, with a background in computer vision and
             medical imaging.
           </p>
+          <p class="current reveal">Currently: building agentic customer-support AI at <strong>i2c inc.</strong></p>
           <div class="hero-actions reveal">
             <a class="btn btn-primary" href="assets/AzeemWaqarResume.pdf" download>Download Resume</a>
             <a class="btn btn-ghost" href="#contact">Get in touch</a>
@@ -162,6 +186,7 @@
         <h2 class="section-title reveal">Projects</h2>
         <div class="cards">
           <article class="card reveal">
+            <p class="card-metric">70% ↓ call-center traffic · 1000+ concurrent sessions</p>
             <h3>Agentic AI for Customer Service</h3>
             <p>Action-driven support agent for fintech across voice and chat. Integrated IBM Watsonx Assistant with AI agents for context-aware, end-to-end resolution of 50+ call types, with a multi-agent orchestration layer (MCP-style) and a secure, client-configurable architecture supporting 1000+ simultaneous conversations.</p>
             <div class="tags">
@@ -170,6 +195,7 @@
           </article>
 
           <article class="card reveal">
+            <p class="card-metric">&lt; 50 ms inference</p>
             <h3>Language Translation Service</h3>
             <p>A FastAPI-based translation microservice extending the support agent's multilingual capabilities, optimized for speed and scale with inference under <strong>50&nbsp;ms</strong>.</p>
             <div class="tags">
@@ -178,6 +204,7 @@
           </article>
 
           <article class="card reveal">
+            <p class="card-metric">96% pose-estimation accuracy</p>
             <h3>Lumbar Lordosis &amp; Scoliosis Detector</h3>
             <p>Computer vision app for spinal pose estimation on X-rays. Trained YOLOv8, built a GUI, and deployed on AWS EC2 via Docker + ECR. Extended the prediction pipeline with more classes, improving accuracy by 4% to reach <strong>96%</strong>.</p>
             <div class="tags">
@@ -186,6 +213,7 @@
           </article>
 
           <article class="card reveal">
+            <p class="card-metric">+50% retrieval relevance</p>
             <h3>RAG-Based Chatbot</h3>
             <p>Scraped real-time web data into a custom knowledge base. Ran quantized Llama 2 on CPU for inference under 7&nbsp;s with low memory, using Redis as a vector DB and cross-encoder reranking to improve retrieval relevance by <strong>50%</strong>.</p>
             <div class="tags">
@@ -193,6 +221,9 @@
             </div>
           </article>
         </div>
+        <p class="projects-more reveal">
+          <a href="https://github.com/AzeemWaqarRao" target="_blank" rel="noopener">More on GitHub →</a>
+        </p>
       </div>
     </section>
 
@@ -240,8 +271,8 @@
     <!-- ===== Contact ===== -->
     <section id="contact" class="section">
       <div class="container narrow">
-        <h2 class="section-title reveal">Get in touch</h2>
-        <p class="reveal">Have a role, a project, or an idea? Send a message — I'll get back to you.</p>
+        <h2 class="section-title reveal">Let's build something</h2>
+        <p class="reveal">Hiring for an AI/ML role, or want to collaborate on agents, RAG, or computer vision? Send a message — I usually reply within a day.</p>
 
         <div class="contact-grid">
           <form class="contact-form reveal" id="contact-form" novalidate>
